@@ -1,0 +1,49 @@
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map_canevas {
+        float: left;
+        height: 70%;
+        width: 100%;
+      }
+      #info-box{
+        float: left;
+        font-family: 'Roboto','sans-serif';
+        height: 54%;
+        line-height: 30px;
+        padding-left: 5px;
+        width: 49%;
+        font-family: 'Droid Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        margin-top:4px;
+        background-color: rgb(230,230,230);
+        border-radius: 7px;
+      }
+
+      #legende{
+        float: left;
+        width: 49%;
+        text-align: left;
+        font-family: 'Droid Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        margin-left:3px;
+      }
+
+
+      #geolocation{
+        font-family: 'Droid Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+
+
+
+      @media only screen and (max-width:800px)
+{
+
+        #info-box, #legende {
+        font-size: 12px;
+      }
+}
