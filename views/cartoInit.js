@@ -10,7 +10,7 @@ function initialize() {
 		var map = new google.maps.Map(document.getElementById("map_canevas"),
 		mapOptions);
  
-    var socket = io.connect('https://carto-vcub.herokuapp.com/');
+    var socket = io.connect('https://carto-vcub.herokuapp.com');
 
       socket.on('GeoJsonReady', function(data, json) {
         map.data.addGeoJson(data.json);
@@ -58,7 +58,7 @@ function geolocation() {
       }
 
 
-    var socket = io.connect('192.168.0.21:8080');
+    var socket = io.connect('https://carto-vcub.herokuapp.com');
 
         socket.on('GeoJsonReady', function(data, json) {
         map.data.addGeoJson(data.json);
